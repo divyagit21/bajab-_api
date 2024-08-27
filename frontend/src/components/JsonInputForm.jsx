@@ -11,7 +11,7 @@ const JsonInputForm = ({ onDataReceived }) => {
     try {
       const data = JSON.parse(jsonInput);
       console.log('Parsed JSON Data:', data); 
-      const response = await axios.post('http://localhost:3000/bfhl', data);
+      const response = await axios.post('https://bajab-api.vercel.app/bfhl', data);
       onDataReceived(response.data);
       setError('');
     } catch (err) {

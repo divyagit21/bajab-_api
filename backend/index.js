@@ -3,8 +3,13 @@ const app = express();
 
 app.use(express.json());
 const cors = require('cors');
-app.use(cors());
+// app.use(cors());
 
+app.use(cors({
+  origin: [""],
+  methods: ["POST", "GET"],
+  credentials: true
+}));
 app.use('/',(req,res)=>{
    res.send("app running on vercel")
 })
