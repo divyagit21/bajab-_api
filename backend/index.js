@@ -10,9 +10,9 @@ app.use(cors({
   methods: ["POST", "GET"],
   credentials: true
 }));
-app.use('/',(req,res)=>{
-   res.send("app running on vercel")
-})
+// app.use('/',(req,res)=>{
+//    res.send("app running on vercel")
+// })
 // endpoint for get and post the data
 app
   .route("/bfhl")
