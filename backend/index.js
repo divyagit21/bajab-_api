@@ -6,7 +6,7 @@ const cors = require('cors');
 // app.use(cors());
 
 app.use(cors({
-  origin: ["https://bajab-api-b9j1.vercel.app/"],
+  origin: ["https://bajab-api-b9j1.vercel.app"],
   methods: ["POST", "GET"],
   credentials: true
 }));
